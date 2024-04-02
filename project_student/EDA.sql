@@ -31,18 +31,3 @@ SELECT
 FROM student_mh;
 
 
--- Write a query that looks at the statistics of each student group excluding the null values
-SELECT 
-       inter_dom, 
-       MIN(todep) AS min_phq, 
-       MAX(todep) AS max_phq, 
-       ROUND(AVG(todep), 2) AS avg_phq, 
-       MIN(tosc) AS min_scs, 
-       MAX(tosc) AS max_scs, 
-       ROUND(AVG(tosc), 2) AS avg_scs, 
-       MIN(toas) AS min_as, 
-       MAX(toas) AS max_as, 
-       ROUND(AVG(toas), 2) AS avg_as
-FROM student_mh
-WHERE inter_dom IN ('Inter', 'Dom')
-GROUP BY inter_dom;

@@ -1,6 +1,13 @@
--- How do region of origin, length of stay, acculturative stress, and social connectedness impact the 
--- mental health (specifically depression) of international students?"
--- Analyze the impact of stay on the mental health of international students, based on their region of origin
+
+/*
+This SQL query examines the mental health of international students, focusing on depression and how it 
+may vary by region of origin, length of stay, acculturative stress, and social connectedness. 
+It calculates the average depression score overall, as well as segmented into short (2 years or less) 
+and long stays (more than 2 years). Additionally, it provides average scores for acculturative stress 
+and social connectedness for each region. The results are grouped by region and sorted to show regions 
+with the highest average depression scores first, aiming to reveal regional patterns and the influence 
+of time spent abroad on student mental health.
+*/
 
 SELECT 
     region, 

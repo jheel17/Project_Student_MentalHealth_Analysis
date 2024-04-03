@@ -1,4 +1,10 @@
--- Compare Level of ToDep, ToSC & ToAS between International (Inter) and Domestic (Dom) Students
+
+/*
+This SQL query fetches the lowest, highest, and average scores for depression (todep), 
+social connectivity (tosc), and acculturative stress (toas) for both international and domestic students.
+It helps identify mental health trends and social well-being within these groups.
+*/
+
 -- Total score of depression measured by PHQ-9 - todep
 -- Total social connectedness measured by SCS- tosc
 -- Total score of Acculturative Stress- toas

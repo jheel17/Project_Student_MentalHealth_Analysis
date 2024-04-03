@@ -1,6 +1,6 @@
 # Introduction:
 
-**Analyzing Students Mental Health Score** This project aims to analyze the mental health conditions and help-seeking behaviors of students at an international university in Japan 🇯🇵, focusing on factors such as depression 😔, social connectedness 👫, acculturative stress 😰, and the impact of demographic variables like nationality 🌍, gender 🚻, academic level 🎓, and language proficiency 🗣️. 
+**Analyzing Students Mental Health Score:** This project aims to analyze the mental health conditions and help-seeking behaviors of students at an international university in Japan 🇯🇵, focusing on factors such as depression 😔, social connectedness 👫, acculturative stress 😰, and the impact of demographic variables like nationality 🌍, gender 🚻, academic level 🎓, and language proficiency 🗣️. 
 
 By leveraging a comprehensive dataset 📊, the study seeks to uncover the nuanced ways in which different factors contribute to the mental well-being of international and domestic students 🎒, providing insights that could guide the development of targeted support services 🎯💡.
 
@@ -35,7 +35,7 @@ Below are the key objectives I aimed to explore through my analysis:
 
 ### 1. Mental Health Comparisons
 
-- **International vs. Domestic Students**: Compare depression, social connectedness, and acculturative stress scores between international and domestic students.
+Compare depression, social connectedness, and acculturative stress scores between international and domestic students.
 
 ### 2. Influencing Factors on Mental Health
 
@@ -75,6 +75,13 @@ In my Data Analyst job market project, I utilized a dynamic suite of tools to na
 
 # The Analysis:
 
+- I delved into the data using SQL to dissect the various factors affecting student mental health, examining correlations with demographic details and personal experiences. 
+
+- Visualizations brought the numbers to life, clarifying trends and guiding the recommendations to support the well-being of the student community.
+
+**Here's how I approached each objective:**
+
+
 ## 1. Mental Health Comparison:
 
 This SQL query helps compare average mental scores between international and domestic students.
@@ -95,7 +102,9 @@ FROM student_mh
 WHERE inter_dom IN ('Inter', 'Dom')
 GROUP BY inter_dom;
 ```
-Here's are the key insights from the comparison of mental health score of Internations vs Domestic students. 
+
+
+### Key Insights
 
 - **Depression Levels:** A dip into depression scores reveals domestic students have a marginally higher average depression score.
 
@@ -105,10 +114,12 @@ Here's are the key insights from the comparison of mental health score of Intern
 
 *The reason international students experience more stress related to acculturation could be because they simultaneously manage the usual academic pressures while also adapting to an entirely different cultural context, which is a unique challenge that domestic students do not encounter.*
 
-![Average Scores by Category & Student Type](project_student\assets\query1.png)
+![Average Scores by Category & Student Type](project_student/assets/query1.png)
 *This bar chart compares the average scores for depression, social connectivity, and acculturative stress between international and domestic students*
 
+
 ## 2. Influencing Factors on Mental Health: 
+
 
 ### a) Duration of Stay:
 
@@ -130,7 +141,8 @@ ORDER BY
     stay;
 ```
 
-Here's are some insights related to length of stay corresponding mental health scores:
+
+### Key Insights
 
 - We observe that the data does not exhibit a straightforward correlation between the length of stay and depression levels.
 
@@ -152,6 +164,7 @@ Here's are some insights related to length of stay corresponding mental health s
 | 10   | 13                 | 32                           | 50                           |
 
 
+
 ### b) Academic Levels and Stay Duration:
 
 This SQL query is designed to analyze average depression levels among international students, categorized by their academic level and the length of their stay. The aim is to understand if there's a pattern in depression levels based on how advanced a student is in their academic journey and how long they have been staying in a foreign country.
@@ -171,7 +184,8 @@ ORDER BY
     academic, stay_cate;
 ```
 
-Here are some insights on data based on  both academic level and length of stay:
+
+### Key Insights
 
 **Graduate Students:** 
 
@@ -190,9 +204,11 @@ Here are some insights on data based on  both academic level and length of stay:
 
 *This data may suggest that graduate students adjust more effectively to longer stays than undergraduates. It also highlights a potential trend where undergraduates maintain relatively high depression scores irrespective of the length of stay. This information could be vital for universities to tailor their mental health services specifically for long-term undergraduate students who may be more vulnerable to sustained levels of depression.*
 
-![Average Depression Score by Academic Level & Length of Stay](project_student\assets\query2.PNG)
+![Average Depression Score by Academic Level & Length of Stay](project_student/assets/query2.PNG)
 
 *This bar chart illustrates average depression scores by academic level and length of stay, showing lower scores for graduate students with long and short stays compared to undergraduates who display consistently higher depression scores across all durations.*
+
+
 
 ### c) Region of Origin:
 
@@ -215,7 +231,9 @@ GROUP BY
 ORDER BY 
     Avg_Dep DESC;
 ```
-Here are key insights on data based on region of origin:
+
+
+### Key Insights
 
 - **East Asia(EA):** Minor fluctuation in depression scores with stay length; moderate stress and good social ties.
 
@@ -261,7 +279,7 @@ ORDER BY
     age;
 ```
 
-Analyzing the query results for average depression, average social connectivity, and average acculturative stress scores across different ages, here are the insights:
+### Key Insights
 
 - **Depression Scores:** There's variability in depression scores with age, with no clear trend of increasing or decreasing with age.
 
@@ -308,7 +326,7 @@ ORDER BY
     gender;
 ```
 
-Here are the insights based on gender differences in average depression, social connectivity, and acculturative stress:
+### Key Insights
 
 - Female students have a  higher average depression score (8.4) compared to male students (7.82).
 Average Social Connectivity (avg_social_connect):
@@ -319,7 +337,7 @@ Average Social Connectivity (avg_social_connect):
 
 *These differences could inform targeted support services for female students, recognizing the unique challenges and experiences that may be associated with gender.*
 
-![Average Mental Health Scores by Gender](project_student\assets\queryE.PNG)
+![Average Mental Health Scores by Gender](project_student/assets/queryE.PNG)
 
 *This bar chart compares average mental health scores by gender, indicating females report higher depression, acculturative stress and lower social connectivity than males.*
 
@@ -362,7 +380,7 @@ ORDER BY
     END;
 ```
 
-Key Insights:
+### Key Insights
 
 - High Japanese proficiency is linked to the lowest acculturative stress.
 - Low Japanese proficiency is linked to the highest acculturative stress.
@@ -406,7 +424,7 @@ ORDER BY
     inter_dom;
 ```
 
-Key Insights:
+### Key Insights
 
 - International students report higher perceived discrimination (16.04) compared to domestic students (13.52).
 
@@ -423,7 +441,7 @@ Guilt:
 
 *Overall These insights suggest that international students face greater challenges across all measured emotional and psychological dimensions, which could be attributed to the stresses of adapting to a new cultural environment. This underscores the need for targeted support for international students, including counseling, peer support networks, and cultural acclimation programs.*
 
-![Comparison of Mental Health Indicators by Student Type](project_student\assets\query3.PNG)
+![Comparison of Mental Health Indicators by Student Type](project_student/assets/query3.PNG)
 
 *This bar chart compares average scores of perceived discrimination, homesickness, perceived hatred, fear, culture shock, and guilt between domestic and international students, with international students scoring higher on all accounts.*
 
@@ -452,7 +470,7 @@ ORDER BY
     inter_dom;
 ```
 
-Key Insights
+### Key Insights
 
 **Domestic Students:**
 - More likely to seek help from parents (65.67%) and friends (58.21%).
@@ -468,7 +486,7 @@ Key Insights
 
 *These insights indicates that international students might face barriers in seeking traditional support from family and friends, possibly due to geographical and cultural distances, leading them to rely more on professionals and digital means. This suggests that universities could enhance their professional support services and online resources to better accommodate the needs of international students.*
 
-![Percentage of Students Seeking Help by Source & Student Type](project_student\assets\query4.PNG)
+![Percentage of Students Seeking Help by Source & Student Type](project_student/assets/query4.PNG)
 
 *This bar chart displays the proportions of domestic and international students seeking help from various sources, showing that domestic students tend to seek help from parents most frequently, while international students show a greater preference for seeking help alone and from the internet.*
 

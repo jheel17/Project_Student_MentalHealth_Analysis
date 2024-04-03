@@ -387,18 +387,22 @@ ORDER BY
 - High English proficiency associates with lower depression and acculturative stress.
 - Low English proficiency sees the highest depression, indicating language barriers impact mental health.
 
+ **Japanese Proficiency and Mental Health**
+
 | Japanese Proficiency | Avg Depression | Avg Social Connectivity | Avg Acculturative Stress |
 |----------------------|----------------|-------------------------|--------------------------|
 | High                 | 8.17           | 38.01                   | 64.6                     |
 | Average              | 8.45           | 37.6                    | 75.36                    |
 | Low                  | 7.95           | 36.85                   | 76.86                    |
 
+**English Proficiency and Mental Health**
 
 | English Proficiency | Avg Depression | Avg Social Connectivity | Avg Acculturative Stress |
 |---------------------|----------------|-------------------------|--------------------------|
 | High                | 7.98           | 37.05                   | 75.3                     |
 | Average             | 8.31           | 38.48                   | 67.44                    |
 | Low                 | 9.32           | 37.05                   | 68.36                    |
+
 
 *Language proficiency is key to reducing stress and depression in international students. High local language skills ease cultural adaptation; strong English skills offer broader support and integration.*
 
